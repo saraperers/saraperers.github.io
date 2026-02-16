@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Concepts Review | Perers Family Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f8fafc;
+            line-height: 1.6;
+            color: #334155;
+        }
+        
+        .header {
+            background: white;
+            padding: 2rem 0;
+            border-bottom: 1px solid #e2e8f0;
+            margin-bottom: 3rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 0.5rem;
+        }
+        
+        .subtitle {
+            font-size: 1.1rem;
+            color: #64748b;
+        }
+        
+        .concepts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .concept-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+        }
+        
+        .concept-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        .concept-header {
+            padding: 1.5rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .concept-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 0.5rem;
+        }
+        
+        .concept-description {
+            color: #64748b;
+            font-size: 0.95rem;
+        }
+        
+        .concept-preview {
+            height: 300px;
+            background: #f1f5f9;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .concept-preview iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            transform: scale(0.7);
+            transform-origin: 0 0;
+            width: 142.857%;
+            height: 142.857%;
+        }
+        
+        .concept-actions {
+            padding: 1.5rem;
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            text-align: center;
+            transition: all 0.2s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn-primary {
+            background: #3b82f6;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #2563eb;
+        }
+        
+        .btn-secondary {
+            background: #f1f5f9;
+            color: #475569;
+            border: 1px solid #d1d5db;
+        }
+        
+        .btn-secondary:hover {
+            background: #e2e8f0;
+        }
+        
+        .instructions {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            margin-bottom: 2rem;
+        }
+        
+        .instructions h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 1rem;
+        }
+        
+        .instructions ul {
+            margin-left: 1.5rem;
+        }
+        
+        .instructions li {
+            margin-bottom: 0.5rem;
+            color: #475569;
+        }
+        
+        @media (max-width: 768px) {
+            .concepts-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .container {
+                padding: 0 1rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <h1>Design Concepts</h1>
+            <p class="subtitle">Four different homepage concepts for the Perers family website</p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="instructions">
+            <h2>How to Review</h2>
+            <ul>
+                <li><strong>Preview:</strong> Each concept shows a scaled-down preview below</li>
+                <li><strong>View Full Size:</strong> Click "View Full Size" to see the concept in a new tab</li>
+                <li><strong>Features:</strong> Each concept includes "Perers Family" branding and sara@perers.com contact</li>
+                <li><strong>Mobile Friendly:</strong> All concepts are responsive and work on mobile devices</li>
+            </ul>
+        </div>
+        
+        <div class="concepts-grid">
+            <div class="concept-card">
+                <div class="concept-header">
+                    <div class="concept-title">Concept 1: Minimal & Clean</div>
+                    <div class="concept-description">
+                        Clean, minimal design with subtle gradient background and frosted glass effect. 
+                        Focus on typography and simplicity.
+                    </div>
+                </div>
+                <div class="concept-preview">
+                    <iframe src="concept-1-minimal.html"></iframe>
+                </div>
+                <div class="concept-actions">
+                    <a href="concept-1-minimal.html" target="_blank" class="btn btn-primary">View Full Size</a>
+                </div>
+            </div>
+            
+            <div class="concept-card">
+                <div class="concept-header">
+                    <div class="concept-title">Concept 2: Warm & Welcoming</div>
+                    <div class="concept-description">
+                        Family-oriented design with warm colors, home icon, and friendly copy. 
+                        Conveys a cozy, welcoming feeling.
+                    </div>
+                </div>
+                <div class="concept-preview">
+                    <iframe src="concept-2-warm.html"></iframe>
+                </div>
+                <div class="concept-actions">
+                    <a href="concept-2-warm.html" target="_blank" class="btn btn-primary">View Full Size</a>
+                </div>
+            </div>
+            
+            <div class="concept-card">
+                <div class="concept-header">
+                    <div class="concept-title">Concept 3: Modern & Geometric</div>
+                    <div class="concept-description">
+                        Dark theme with geometric animations, glass morphism effects, and modern typography. 
+                        Contemporary and sophisticated.
+                    </div>
+                </div>
+                <div class="concept-preview">
+                    <iframe src="concept-3-modern.html"></iframe>
+                </div>
+                <div class="concept-actions">
+                    <a href="concept-3-modern.html" target="_blank" class="btn btn-primary">View Full Size</a>
+                </div>
+            </div>
+            
+            <div class="concept-card">
+                <div class="concept-header">
+                    <div class="concept-title">Concept 4: Animated (Updated Current)</div>
+                    <div class="concept-description">
+                        Updated version of the current animated style with floating blobs and gradient text, 
+                        but with family-appropriate content and contact info.
+                    </div>
+                </div>
+                <div class="concept-preview">
+                    <iframe src="concept-4-animated.html"></iframe>
+                </div>
+                <div class="concept-actions">
+                    <a href="concept-4-animated.html" target="_blank" class="btn btn-primary">View Full Size</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

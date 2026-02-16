@@ -1,18 +1,19 @@
 # perers.com
 
-Sara Perers' personal website hosted at [perers.com](https://perers.com).
+The Perers family website hosted at [perers.com](https://perers.com).
 
 ## Overview
 
-This is a static website built with vanilla HTML, CSS, and JavaScript, hosted on GitHub Pages.
+This is a static website built with vanilla HTML, CSS, and JavaScript, hosted on GitHub Pages. Currently serves as a placeholder for the Perers family home on the web.
 
 ## Structure
 
 - `index.html` - Main homepage
-- `global.css` - Global styles
+- `global.css` - Global styles  
 - `index.js` - Main JavaScript functionality
-- `data/` - Data files and assets
+- `data/` - Data files and assets (blobs, particle system)
 - `CNAME` - Custom domain configuration
+- `design-concepts/` - Alternative design mockups for review
 
 ## Development
 
@@ -29,6 +30,10 @@ To make changes:
 
 This repository includes `AGENTS.md` for AI agent workspace configuration, enabling AI assistants to help maintain and develop the website while following proper guidelines and safety protocols.
 
+## Contact
+
+For inquiries: sara@perers.com
+
 ## License
 
-© Sara Perers. All rights reserved.
+© Perers Family. All rights reserved.
