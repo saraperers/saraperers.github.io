@@ -4,16 +4,15 @@ The Perers family website hosted at [perers.com](https://perers.com).
 
 ## Overview
 
-This is a static website built with vanilla HTML, CSS, and JavaScript, hosted on GitHub Pages. Currently serves as a placeholder for the Perers family home on the web.
+A minimal static website serving as the Perers family's digital home. Built with modern HTML and CSS, hosted on GitHub Pages.
 
 ## Structure
 
-- `index.html` - Main homepage
-- `global.css` - Global styles  
-- `index.js` - Main JavaScript functionality
-- `data/` - Data files and assets (blobs, particle system)
-- `CNAME` - Custom domain configuration
-- `design-concepts/` - Alternative design mockups for review
+Minimal repository with only essential files:
+
+- `index.html` - Main homepage (self-contained with inline CSS, no external dependencies)
+- `CNAME` - Custom domain configuration (required for perers.com)
+- `README.md` - This file
 
 ## Development
 
@@ -22,13 +21,9 @@ The site is automatically deployed via GitHub Pages from the `main` branch.
 To make changes:
 
 1. Clone the repository
-2. Make your changes
+2. Edit `index.html` directly
 3. Commit and push to the `main` branch
-4. GitHub Pages will automatically deploy the changes
-
-## AI Workspace
-
-This repository includes `AGENTS.md` for AI agent workspace configuration, enabling AI assistants to help maintain and develop the website while following proper guidelines and safety protocols.
+4. GitHub Pages will automatically deploy within 2-3 minutes
 
 ## Contact
 
